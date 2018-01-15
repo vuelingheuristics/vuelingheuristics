@@ -18,20 +18,27 @@ def reading_data_locations():
         return (loc_a, cor_x, cor_y, loc_z)
 
 def reading_data_distances():
-    matrix = np.loadtxt('MokumAirwaysDistances.txt')
-    print (matrix)
+    with open('MokumAirwaysDistances.txt', 'r') as list_distances:
+        for lines in list_distances:
+            line = lines.splitlines()
+            matrix = np.array(line)
+        return (matrix)
 
 def reading_data_transport():
-    matrix = np.loadtxt('MokumAirwaysPassengers.txt')
-    print (matrix)
+    with open('MokumAirwaysPassengers.txt', 'r') as list_passengers:
+        for lines in list_passengers:
+            line = lines.splitlines()
+            matrix = np.array(line)
+        return (matrix)
 
 def plot_data():
     reading_data_locations()
     plt.scatter(cor_x, cor_y, label='Map of destinations')
+    plt.axis([min(cor_x), max(cor_x), max(cor_y), 0])
     plt.xlabel('coordinate x')
     plt.ylabel('coordinate y')
     for i, txt in enumerate(loc_z):
         plt.annotate(txt, (cor_x[i],cor_y[i]))
     plt.show()
 
-reading_data_transport()
+plot_data()
