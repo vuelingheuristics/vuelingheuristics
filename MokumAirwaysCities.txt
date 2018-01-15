@@ -1,7 +1,4 @@
-# List of Cities
-# Each row gives: id , x-coordinate , y-coordinate , name
-# the x and y coordinates are for visualization purposes only
- 0,205,320,"Amsterdam"
+0,205,320,"Amsterdam"
  1,425,535,"Athens"
  2,160,490,"Barcelona"
  3,280,315,"Berlin"
