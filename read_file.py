@@ -1,4 +1,4 @@
-#reading file for setting up data 
+#reading file for setting up data
 import matplotlib.pyplot as plt
 import csv
 import numpy as np
@@ -43,4 +43,4 @@ def plot_data():
         plt.annotate(txt, (cor_x[i],cor_y[i]))
     plt.show()
 
-plot_data()
+reading_data_distances()

@@ -32,10 +32,10 @@ class Location(object):
 
         #function for retrievinf distance between two cities
     ''''def get_distance(city1, city2):
-        city1 = list_destinations.? #getting both cities form the list
-        city2 = list_destinations.?
+        start = list_destinations.[city1]? #getting both cities form the list
+        end = list_destinations.[city2]
 
-        distance =
+        distance = list_distances[row,column] #row as start and column as end position
 
 
 
