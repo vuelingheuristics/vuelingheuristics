@@ -1,3 +1,4 @@
+#reading file for setting up data 
 import matplotlib.pyplot as plt
 import csv
 import numpy as np
